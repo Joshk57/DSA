@@ -34,3 +34,23 @@ var reformatDate = function(date) {
 
 date = "20th Oct 2052"
 // console.log(reformatDate(date))
+
+
+// 500. Keyboard Row
+
+var findWords = function(words) {
+    const first = "qwertyuiop"
+    const second = "asdfghjkl"
+    const third = "zxcvbnm"
+
+    for (let i = 0; i < words.length; i++) {
+        for (let j = words[i]; j < words.length; j++) {
+            
+        }
+    }
+};
+
+words = ["Hello","Alaska","Dad","Peace"]
+// words = ["omk"]
+// words = ["adsdf","sfd"]
+console.log(findWords(words))
