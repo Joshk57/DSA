@@ -53,19 +53,12 @@ words = ["Hello","Alaska","Dad","Peace"]
 // 520. Detect Capital
 
 var detectCapitalUse = function(word) {
-    const capitalAlpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-
-    let count = 0
-    for (let i = 0; i < word.length; i++) {
-        if (capitalAlpha.includes(word[i])) {
-            count++
-        }
-    }
-    if (count === word.length) {
-        return true
-    } else {
+    if(word.toLowerCase() == word || word.toUpperCase() == word) 
+        return true;
+    else if((word[0] + word.slice(1).toLowerCase()) == word) 
+        return true 
+    else 
         return false
-    }
 };
 
 // word = "USA"
