@@ -63,4 +63,18 @@ var detectCapitalUse = function(word) {
 
 // word = "USA"
 word = "FlaG"
-console.log(detectCapitalUse(word))
+// console.log(detectCapitalUse(word))
+
+
+
+
+//521. Longest Uncommon Subsequence I
+
+var findLUSlength = function(a, b) {
+    
+};
+
+a = "aba", b = "cdc"
+// a = "aaa", b = "bbb"
+// a = "aaa", b = "aaa"
+console.log(findLUSlength(a, b))
