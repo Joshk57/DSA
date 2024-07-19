@@ -39,15 +39,9 @@ date = "20th Oct 2052"
 // 500. Keyboard Row
 
 var findWords = function(words) {
-    const first = "qwertyuiop"
-    const second = "asdfghjkl"
-    const third = "zxcvbnm"
-
-    for (let i = 0; i < words.length; i++) {
-        for (let j = words[i]; j < words.length; j++) {
-            
-        }
-    }
+    const rows = [/^[qwertyuiop]+$/, /^[asdfghjkl]+$/, /^[zxcvbnm]+$/];
+  
+    return words.filter(word => rows.some(row => row.test(word.toLowerCase())));
 };
 
 words = ["Hello","Alaska","Dad","Peace"]
