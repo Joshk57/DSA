@@ -78,4 +78,15 @@ var findLUSlength = function(a, b) {
 a = "aba", b = "cdc"
 // a = "aaa", b = "bbb"
 // a = "aaa", b = "aaa"
-console.log(findLUSlength(a, b))
+// console.log(findLUSlength(a, b))
+
+
+
+//522. Longest Uncommon Subsequence II
+var findLUSlength = function(strs) {
+    
+};
+
+strs = ["aba","cdc","eae"]
+// strs = ["aaa","aaa","aa"]
+console.log(findLUSlength(strs))
