@@ -113,4 +113,14 @@ function isSubsequence(x, y) {
 
 strs = ["aba","cdc","eae"]
 // strs = ["aaa","aaa","aa"]
-console.log(findLUSlength(strs))
+// console.log(findLUSlength(strs))
+
+//523. Continuous Subarray Sum
+
+var checkSubarraySum = function(nums, k) {
+    
+};
+
+nums = [23,2,4,6,7], k = 6
+// nums = [23,2,6,4,7], k = 6
+console.log(checkSubarraySum(nums, k))
