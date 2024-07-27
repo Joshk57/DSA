@@ -83,9 +83,33 @@ a = "aba", b = "cdc"
 
 
 //522. Longest Uncommon Subsequence II
-var findLUSlength = function(strs) {
-    
-};
+function isSubsequence(x, y) {
+    let j = 0;
+    for (let i = 0; i < y.length && j < x.length; i++) {
+      if (x[j] === y[i]) {
+        j++;
+      }
+    }
+    return j === x.length;
+  }
+  
+  // Function to find the length of the longest uncommon subsequence
+  function findLUSlength(strs) {
+    let maxLength = -1;
+    for (let i = 0; i < strs.length; i++) {
+      let isUncommon = true;
+      for (let j = 0; j < strs.length; j++) {
+        if (i !== j && isSubsequence(strs[i], strs[j])) {
+          isUncommon = false;
+          break;
+        }
+      }
+      if (isUncommon) {
+        maxLength = Math.max(maxLength, strs[i].length);
+      }
+    }
+    return maxLength;
+  }
 
 strs = ["aba","cdc","eae"]
 // strs = ["aaa","aaa","aa"]
