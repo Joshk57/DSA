@@ -135,4 +135,14 @@ var checkSubarraySum = function(nums, k) {
 
 nums = [23,2,4,6,7], k = 6
 // nums = [23,2,6,4,7], k = 6
-console.log(checkSubarraySum(nums, k))
+// console.log(checkSubarraySum(nums, k))
+
+
+// 524. Longest Word in Dictionary through Deleting
+
+var findLongestWord = function(s, dictionary) {
+    
+};
+s = "abpcplea", dictionary = ["ale","apple","monkey","plea"]
+// s = "abpcplea", dictionary = ["a","b","c"]
+console.log(findLongestWord(s, dictionary))
