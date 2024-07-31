@@ -145,4 +145,34 @@ var findLongestWord = function(s, dictionary) {
 };
 s = "abpcplea", dictionary = ["ale","apple","monkey","plea"]
 // s = "abpcplea", dictionary = ["a","b","c"]
-console.log(findLongestWord(s, dictionary))
+// console.log(findLongestWord(s, dictionary))
+
+
+
+
+
+const problem = function(arr) {
+
+    let count = 0
+
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = i+ 1; j < arr.length; j++) {
+            if (arr[i].startsWith(arr[j])) {
+                count++
+            } else if (arr[j].startsWith(arr[i])) {
+                count++
+            }
+        }
+    }
+
+    return count
+}
+
+arr = ["ab", "a", "a", "abcd", "b", "bc", "c"]
+console.log(problem(arr))
+
+
+
+
+
+
