@@ -168,9 +168,22 @@ const problem = function(arr) {
     return count
 }
 
-arr = ["ab", "a", "a", "abcd", "b", "bc", "c"]
-console.log(problem(arr))
 
+// 121. Best time to buy and sell stocks
+
+var maxProfit = function(prices) {
+    
+    let highestProfit = 0
+    let currentProfit = 0
+
+    for (let i = 0; i < prices.length; i++) {
+        
+    }
+};
+
+prices = [7,1,5,3,6,4]
+// prices = [7,6,4,3,1]
+console.log(maxProfit(prices))
 
 
 
