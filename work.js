@@ -204,4 +204,12 @@ console.log(productExceptSelf(nums))
 
 
 
+// 21. Merge Two Sorted Lists
 
+var mergeTwoLists = function(list1, list2) {
+    
+};
+
+list1 = [], list2 = []
+// list1 = [], list2 = [0]
+console.log(mergeTwoLists(list1, list2))
