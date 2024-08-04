@@ -200,14 +200,22 @@ var productExceptSelf = function(nums) {
 
 nums = [1, 2, 3, 4]
 // nums = [-1,1,0,-3,3]
-console.log(productExceptSelf(nums))
+// console.log(productExceptSelf(nums))
 
 
 
 // 21. Merge Two Sorted Lists
 
-var mergeTwoLists = function(list1, list2) {
-    
+var mergeTwoLists = function(l1, l2) {
+    if (!l1) return l2;
+    else if (!l2) return l1;
+    else if (l1.val <= l2.val) {
+        l1.next = mergeTwoLists(l1.next, l2);
+        return l1;
+    } else {
+        l2.next = mergeTwoLists(l1, l2.next);
+        return l2
+    }
 };
 
 list1 = [], list2 = []
