@@ -177,14 +177,30 @@ var maxProfit = function(prices) {
     let currentProfit = 0
 
     for (let i = 0; i < prices.length; i++) {
-        
+
     }
 };
 
 prices = [7,1,5,3,6,4]
 // prices = [7,6,4,3,1]
-console.log(maxProfit(prices))
+// console.log(maxProfit(prices))
 
+
+// 238. Product of Array Except Self
+
+var productExceptSelf = function(nums) {
+    
+    let newArr = []
+    for (let i = 0; i < nums.length; i++) {{
+        for (let j = i + 1; j < nums.length; j++) {
+            if ()
+        }
+    }}
+};
+
+nums = [1, 2, 3, 4]
+// nums = [-1,1,0,-3,3]
+console.log(productExceptSelf(nums))
 
 
 
