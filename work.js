@@ -221,3 +221,14 @@ var mergeTwoLists = function(l1, l2) {
 list1 = [], list2 = []
 // list1 = [], list2 = [0]
 console.log(mergeTwoLists(list1, list2))
+
+
+// 22. Generate paranthesis
+
+var generateParenthesis = function(n) {
+    
+};
+
+n = 3
+m = 1
+console.log(generateParenthesis(n))
