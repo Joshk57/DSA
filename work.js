@@ -220,7 +220,7 @@ var mergeTwoLists = function(l1, l2) {
 
 list1 = [], list2 = []
 // list1 = [], list2 = [0]
-console.log(mergeTwoLists(list1, list2))
+// console.log(mergeTwoLists(list1, list2))
 
 
 // 22. Generate paranthesis
@@ -250,4 +250,16 @@ var generateParenthesis = function(n) {
 
 n = 3
 m = 1
-console.log(generateParenthesis(n))
+// console.log(generateParenthesis(n))
+
+
+//23. merge k sorted lists
+
+var mergeKLists = function(lists) {
+    
+};
+
+lists = [[1,4,5],[1,3,4],[2,6]]
+// lists = []
+// lists = [[]]
+console.log(mergeKLists(lists))
