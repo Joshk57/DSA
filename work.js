@@ -284,4 +284,15 @@ var mergeKLists = function(lists) {
 lists = [[1,4,5],[1,3,4],[2,6]]
 // lists = []
 // lists = [[]]
-console.log(mergeKLists(lists))
+// console.log(mergeKLists(lists))
+
+// 24. Swap Nodes in pairs
+
+var swapPairs = function(head) {
+    
+};
+
+head = [1,2,3,4]
+// head = []
+// head = [1]
+console.log(swapPairs(head))
