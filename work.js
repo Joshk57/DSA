@@ -311,4 +311,15 @@ var swapPairs = function(head) {
 head = [1,2,3,4]
 // head = []
 // head = [1]
-console.log(swapPairs(head))
+// console.log(swapPairs(head))
+
+
+//25. Reverse Nodes in k-Group
+
+var reverseKGroup = function(head, k) {
+    
+};
+
+head = [1,2,3,4,5], k = 2
+// head = [1,2,3,4,5], k = 3
+console.log(reverseKGroup(head, k))
