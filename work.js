@@ -289,7 +289,22 @@ lists = [[1,4,5],[1,3,4],[2,6]]
 // 24. Swap Nodes in pairs
 
 var swapPairs = function(head) {
+
+    let dummy = new ListNode(0)
+    let tail = dummy
+    let curr = head
     
+    while(curr && curr.next){
+        let temp = curr.next.next
+
+        tail.next = curr.next
+        curr.next.next = curr
+        curr.next = temp
+
+        tail = curr
+        curr = temp
+    }
+    return dummy.next
 };
 
 head = [1,2,3,4]
