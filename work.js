@@ -317,7 +317,23 @@ head = [1,2,3,4]
 //25. Reverse Nodes in k-Group
 
 var reverseKGroup = function(head, k) {
-    
+    var dummy = new ListNode(0);
+        dummy.next = head;
+        var prevGroupTail = dummy;
+
+        while (head) {
+            var groupStart = head;
+            var groupEnd = getGroupEnd(head, k);
+
+            if (!groupEnd)
+                break;
+
+            prevGroupTail.next = reverseList(groupStart, groupEnd.next);
+            prevGroupTail = groupStart;
+            head = prevGroupTail.next;
+        }
+    var newHead = dummy.next;
+    return newHead;
 };
 
 head = [1,2,3,4,5], k = 2
