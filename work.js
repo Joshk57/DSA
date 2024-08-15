@@ -289,6 +289,7 @@ lists = [[1,4,5],[1,3,4],[2,6]]
 // 24. Swap Nodes in pairs
 
 var swapPairs = function(head) {
+    if(!head || !head.next) return head
 
     let dummy = new ListNode(0)
     let tail = dummy
