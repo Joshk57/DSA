@@ -336,6 +336,18 @@ var reverseKGroup = function(head, k) {
     return newHead;
 };
 
+var getGroupEnd = function(head, k) {
+    while (head && k > 1) {
+        head = head.next;
+        k--;
+    }
+    return head;
+}
+
+var reverseList = function(head, stop) {
+
+}
+
 head = [1,2,3,4,5], k = 2
 // head = [1,2,3,4,5], k = 3
 console.log(reverseKGroup(head, k))
