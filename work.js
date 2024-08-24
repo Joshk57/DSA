@@ -378,4 +378,15 @@ var removeDuplicates = function(nums) {
 
 nums = [1,1,2]
 // nums = [0,0,1,1,1,2,2,3,3,4]
-console.log(removeDuplicates(nums))
+// console.log(removeDuplicates(nums))
+
+
+// 28. Find the Index of the First Occurrence in a String
+
+var strStr = function(haystack, needle) {
+    
+};
+
+haystack = "sadbutsad", needle = "sad"
+// haystack = "leetcode", needle = "leeto"
+console.log(strStr(haystack, needle))
