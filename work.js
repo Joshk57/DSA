@@ -345,7 +345,14 @@ var getGroupEnd = function(head, k) {
 }
 
 var reverseList = function(head, stop) {
-
+    var prev = stop;
+    while (head !== stop) {
+        var next = head.next;
+        head.next = prev;
+        prev = head;
+        head = next;
+    }
+    return prev;
 }
 
 head = [1,2,3,4,5], k = 2
